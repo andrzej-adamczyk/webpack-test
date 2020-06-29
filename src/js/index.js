@@ -1,8 +1,18 @@
 import "../scss/main.scss";
 
-import { moment } from "moment";
+import moment from "moment";
 
-console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
+const fromNow = console.log(moment().startOf("day").fromNow());
+
+const stringFromNow = String(fromNow);
+
+console.log(typeof stringFromNow);
+
+console.log(stringFromNow);
+
+document.getElementById("moment").innerHTML = stringFromNow;
+
+// document.getElementById("moment").innerHTML = 1 + 2;
 
 // import "scripts.js";
 
