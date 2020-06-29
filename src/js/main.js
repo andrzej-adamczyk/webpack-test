@@ -1,9 +1,11 @@
-import { hello as hi } from "./hello.js";
+// import { moment } from "moment";
 
-console.log(hi("Andrzej"));
+// console.log(moment().startOf("day").fromNow());
 
 import * as FirstName from "./variables.js";
 
 console.log(FirstName);
 
-// import { Moment } from "/node_modules/moment/moment.js";
+import { hello as hi } from "./hello.js";
+
+console.log(hi("Andrzej"));

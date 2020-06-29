@@ -1,5 +1,9 @@
 import "../scss/main.scss";
 
+import { moment } from "moment";
+
+console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
+
 // import "scripts.js";
 
 // import "scripts_links.js";
