@@ -1,0 +1,371 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
+// ↓ resetowanie domyślnych ustawień przeglądarki↓
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// STYLE DLA URZĄDZENIA MOBILNEGO!
+
+//  ↓ nawigacja pomiędzy tygodniami ↓
+
+@import "modules/mobile_styles/navigation-week.scss";
+
+//  ↓ nawigacja główna ↓
+
+@import "modules/mobile_styles/navigation-main.scss";
+
+// .navigation__main__link:not(.navigation__main__link--homepage) {
+//   background: rgba(128, 125, 125, 0.5);
+// }
+
+/* ↓ hamburger menu↓	*/
+
+.hamburger {
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  border: none;
+  background: none;
+  font-size: 25px;
+
+  &__linki {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    // max-width: 100%;
+  }
+}
+
+/* ↓ klasa JS do rozwijania hamburget menu↓	*/
+
+.navigation--open {
+  display: block;
+}
+
+// ↓ .main ↓
+
+.main {
+  // max-width: 1000px;
+  max-width: 100%;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &__linki {
+    // max-width: 1000px;
+    margin: 10px auto;
+  }
+}
+
+.body {
+  background-color: #2d2241;
+  color: yellow;
+  background-image: url(https://res.cloudinary.com/ddjmcdgi3/image/upload/v1588539220/samples/milky-way-2695569_1920_s4qazw.jpg);
+  background-position: center center;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  // background-image: linear-gradient(
+  //   180deg,
+  //   #ffffff 0%,
+  //   #6284ff 50%,
+  //   #ff0000 100%
+
+  // );
+
+  // text-align: left;
+}
+
+/* ↓ ustawienie dziedziczenia koloru linków ↓  */
+
+a {
+  color: inherit;
+}
+
+/* ↓ nagłówki ↓	 */
+
+.h1 {
+  text-decoration: dotted;
+  text-shadow: aqua;
+  // text-align: center;
+  margin-top: 140px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 20px;
+  // align-items: center;
+  // position: relative;
+  // top: 10px;
+
+  // align-items: center;
+  //padding: 0px 10px 10px 30px;
+  //   z-index: -1;
+}
+
+/* ↓  pseudoelement odpowiedzialny za wyświetalnie informacji o wersji strony ↓  */
+.h1::after {
+  content: " wersja mobilna";
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-self: center;
+}
+
+// .mobile {
+//   display: flex;
+//   flex-direction: row;
+//   color: white;
+//   align-self: center;
+// }
+
+h2 {
+  background-color: #dfdfdf;
+  color: #2d2241;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* ↓ pseudoelement odpowiedzialny za wyświetalnie kropek przed i po nagłówku z numerem tygodnia ↓ */
+
+h2::before {
+  content: " ";
+  display: inline-block;
+  widows: 17px;
+  background: black;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+h2::after {
+  content: " ";
+  display: inline-block;
+  widows: 17px;
+  background: black;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+h3 {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: whitesmoke;
+  text-align: center;
+  top: 10%;
+  /* position: sticky; */
+}
+
+.paragraph-big {
+  background-color: rgba(234, 233, 240, 0.8);
+  color: #2d2241;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.paragraph-small {
+  background-color: rgba(234, 233, 240, 0.7);
+  color: #2d2241;
+  text-align: center;
+  top: 10%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ↓	linki.html ↓	*/
+
+.links-style {
+  background-color: rgb(143, 0, 226);
+  text-align: center;
+}
+
+.links-style li {
+  list-style: none;
+}
+
+.links-style a {
+  color: yellow;
+  font-weight: bold;
+}
+
+.useful__links:visited {
+  color: rgba(234, 233, 240, 1);
+}
+
+.useful__links {
+  color: yellow;
+}
+
+/* ↓"Rzeczy których się nauczyłem"↓	 */
+
+.lesson {
+  background-color: #9666e4;
+}
+
+.lesson:hover {
+  background-color: #8968be;
+}
+
+.lesson__list {
+  list-style-type: disc;
+}
+
+.lesson a {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* ↓Image↓	*/
+
+.image {
+  display: block;
+  max-width: 100%;
+
+  &-large {
+    height: 350px;
+    width: 600px;
+  }
+
+  &-small {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+/* ↓Achievements↓	 */
+
+.achievements {
+  background-color: #347fc4;
+
+  &__list {
+    list-style-type: square;
+  }
+
+  &__list a {
+    color: yellow;
+    font-weight: bold;
+  }
+}
+
+.achievements:hover {
+  background-color: #4c88c0;
+}
+
+/* Homework	 */
+
+.homework {
+  background-color: #137a99;
+
+  &__list {
+    color: yellow;
+  }
+  &__list a {
+    color: yellow;
+    font-weight: bold;
+  }
+}
+
+.homework:hover {
+  background-color: #4f8c9e;
+}
+
+/* class for JS  */
+
+.empty__element {
+  font-weight: 700;
+}
+
+.empty__updateContent,
+.empty__fillContent {
+  font-weight: 700;
+  margin-left: 2vw;
+}
+
+/* ↓ Stopka	↓	 */
+
+.footer {
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-content: center;
+  grid-area: footer;
+  grid-column: 1 / 3;
+  /* display: flex; */
+  /* position: sticky; */
+
+  &__link {
+    color: #2d2241;
+    text-align: center;
+  }
+}
+
+.table {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.pre {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  label {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+    width: 50%;
+  }
+}
+
+abr {
+  font-weight: bold;
+}
+
+.JS--class {
+  background-color: hotpink;
+}
+
+.JS--class-hamburger {
+  color: hotpink;
+  background-color: rgb(0, 0, 0);
+}
+
+.JS--class-hamburger__toggle {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+//  ↓ style dla desktopa  ↓
+
+@import "modules/desktop-styles.scss";

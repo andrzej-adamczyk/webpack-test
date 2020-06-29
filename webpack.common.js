@@ -75,10 +75,23 @@ module.exports = {
 
     /* here you can define another html file and its dependencies */
     new HtmlWebpackPlugin({
+      template: "./src/pages/links.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "links.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
       chunks: ["index"],
       filename: "index.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/index_old.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "index_old.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/another.html",

@@ -1,0 +1,50 @@
+.header__navigation--weeks {
+  position: fixed;
+  top: 0;
+  // width: 100%;
+  max-width: 100%;
+  max-height: 10px;
+  //  bottom: 300px;
+}
+
+.navigation__week {
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  list-style-type: none;
+  background-color: black;
+  padding: 1px;
+  // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  // grid-column: 1 / span 3;
+  // grid-row: 2 / span 2;
+  // border-radius: 8px;
+
+  // margin-bottom: 1%;
+  // min-height: 30%;
+
+  // z-index: 1;
+
+  &__link {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: x-large;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    z-index: 2;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+}
+
+.navigation__week__link:hover {
+  color: rgb(57, 170, 223);
+}
+
+.navigation__week__link:first-child {
+  color: rgba(255, 255, 255, 0.5);
+}

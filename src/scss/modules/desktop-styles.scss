@@ -1,0 +1,151 @@
+@media (min-width: 768px) {
+  :root {
+    --small-padding: 8px;
+    --gay: hotpink;
+  }
+
+  .cssCustomProperties {
+    // padding: var(--small-padding);
+    color: var(--gay);
+  }
+
+  .cssCustomProperties::after {
+    content: " (CSS Custom Properties)";
+    color: white;
+  }
+
+  .h1 {
+    text-decoration: dotted;
+    text-shadow: aqua;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // align-items: center;
+    // padding: 0px 10px 10px 30px;
+    // z-index: 1;
+    //position: relative;
+    //   top: 10px;
+  }
+
+  h2 {
+    background-color: #dfdfdf;
+    color: #2d2241;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: -1;
+  }
+
+  .navigation__main {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(234, 233, 240, 0.3);
+    width: 100vw;
+    position: fixed;
+    top: 60px;
+    padding: 1px;
+    border-radius: 8px;
+    margin-bottom: 300px;
+    min-height: 55px;
+    // text-align: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger__linki {
+    display: none;
+  }
+
+  .navigation__week {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 12px;
+    background-color: black;
+    padding: 1px;
+    border-radius: 8px;
+    margin-bottom: 1%;
+    min-height: 10%;
+    z-index: 5;
+    // grid-column: 1 / span 3;
+    // grid-row: 2 / span 2;
+    // column-gap: 10px;
+    // text-align: center;
+    // position: fixed;
+    // top: 10px;
+    // left: 0;
+    // right: 0;
+    // bottom: 10;
+
+    &__link {
+      margin-left: 10px;
+      color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.5);
+      font-size: x-large;
+      text-decoration: none;
+      width: 95%;
+      text-align: center;
+      justify-items: center;
+      z-index: 2;
+      border-radius: 0;
+      list-style-type: none;
+    }
+  }
+
+  h3 {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: whitesmoke;
+    text-align: center;
+    position: sticky;
+    top: 10.2%;
+    z-index: 1;
+  }
+
+  .main {
+    max-width: 1000px;
+    margin: 5px auto;
+  }
+
+  .h1::after {
+    content: none;
+  }
+
+  .navigation__week__link:hover {
+    color: hotpink;
+  }
+
+  input:focus {
+    background: yellow;
+  }
+
+  .navigation__main__link:first-child {
+    background-color: rgba(226, 235, 106, 0.6);
+  }
+
+  .navigation__main__link:last-child {
+    background-color: rgba(224, 26, 125, 0.3);
+  }
+
+  .navigation__week__link:not(.navigation__week__link--lucky) {
+    background: rgb(83, 85, 76);
+  }
+}
+
+.pseudo::before {
+  content: "NOWE ";
+  color: rgb(219, 219, 219);
+}
+
+.pseudo::after {
+  content: " - PO ZMIANIE ";
+  color: rgb(219, 219, 219);
+}
