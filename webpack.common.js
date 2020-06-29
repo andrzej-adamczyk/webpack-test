@@ -4,8 +4,11 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   /* here you can define another js file */
   entry: {
+    main: "./src/js/main.js",
     index: "./src/js/index.js",
-    another: "./src/js/another.js",
+    my_index: "./src/js/scripts.js",
+    links: "./src/js/scripts_links.js",
+    // another: "./src/js/another.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -74,36 +77,38 @@ module.exports = {
     }),
 
     /* here you can define another html file and its dependencies */
-    new HtmlWebpackPlugin({
-      template: "./src/pages/links.html",
-      inject: true,
-      chunks: ["index"],
-      filename: "links.html",
-    }),
+
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["my_index", "index", "main"],
       filename: "index.html",
     }),
 
     new HtmlWebpackPlugin({
-      template: "./src/pages/index_old.html",
+      template: "./src/pages/links.html",
       inject: true,
-      chunks: ["index"],
-      filename: "index_old.html",
+      chunks: ["my_index", "index", "links"],
+      filename: "links.html",
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
-      inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/andrzej.html",
-      inject: true,
-      chunks: ["index"],
-      filename: "andrzej.html",
-    }),
+
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/index_old.html",
+    //   inject: true,
+    //   chunks: ["index"],
+    //   filename: "index_old.html",
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/another.html",
+    //   inject: true,
+    //   chunks: ["index", "another"],
+    //   filename: "another.html",
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/andrzej.html",
+    //   inject: true,
+    //   chunks: ["index"],
+    //   filename: "andrzej.html",
+    // }),
   ],
 };
