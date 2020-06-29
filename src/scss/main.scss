@@ -3,12 +3,20 @@
 @import "_variables";
 @import "modules/hello.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 100vh;
-  // background-color: hotpink;
-}
+@import "modules/desktop-styles.scss";
+
+@import "./modules/mobile_styles/navigation-week.scss";
+
+@import "./modules/mobile_styles/navigation-main.scss";
+
+@import "style.scss";
+
+// body {
+//   background: $wtf;
+//   color: #fff;
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: center;
+//   min-height: 100vh;
+//   // background-color: hotpink;
+// }

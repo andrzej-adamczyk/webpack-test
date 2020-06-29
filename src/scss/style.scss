@@ -16,11 +16,11 @@ html {
 
 //  ↓ nawigacja pomiędzy tygodniami ↓
 
-@import "modules/mobile_styles/navigation-week.scss";
+@import "./modules/mobile_styles/navigation-week.scss";
 
 //  ↓ nawigacja główna ↓
 
-@import "modules/mobile_styles/navigation-main.scss";
+@import "./modules/mobile_styles/navigation-main.scss";
 
 // .navigation__main__link:not(.navigation__main__link--homepage) {
 //   background: rgba(128, 125, 125, 0.5);
