@@ -10,8 +10,7 @@ console.log(typeof stringFromNow);
 
 console.log(stringFromNow);
 
-document.getElementById("moment").innerHTML =
-  "New day started " + stringFromNow;
+document.getElementById("moment").innerHTML = stringFromNow;
 // document.getElementById("moment").innerHTML = FromNow;
 
 // document.getElementById("moment").innerHTML = 1 + 2;
