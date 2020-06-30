@@ -2,7 +2,7 @@ import "../scss/main.scss";
 
 import moment from "moment";
 
-const fromNow = console.log(moment().startOf("day").fromNow());
+const fromNow = moment().startOf("day").fromNow();
 
 const stringFromNow = String(fromNow);
 
@@ -10,7 +10,9 @@ console.log(typeof stringFromNow);
 
 console.log(stringFromNow);
 
-document.getElementById("moment").innerHTML = stringFromNow;
+document.getElementById("moment").innerHTML =
+  "New day started " + stringFromNow;
+// document.getElementById("moment").innerHTML = FromNow;
 
 // document.getElementById("moment").innerHTML = 1 + 2;
 

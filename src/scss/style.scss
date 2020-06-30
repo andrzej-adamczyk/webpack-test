@@ -120,7 +120,7 @@ a {
 
 /* ↓  pseudoelement odpowiedzialny za wyświetalnie informacji o wersji strony ↓  */
 .h1::after {
-  content: " wersja mobilna";
+  content: " :wersja mobilna";
   display: flex;
   flex-direction: row;
   color: white;
