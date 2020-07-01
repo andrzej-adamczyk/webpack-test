@@ -69,6 +69,7 @@ html {
 }
 
 .body {
+  font-family: "Open Sans", sans-serif;
   background-color: #2d2241;
   color: yellow;
   background-image: url(https://res.cloudinary.com/ddjmcdgi3/image/upload/v1588539220/samples/milky-way-2695569_1920_s4qazw.jpg);
@@ -140,6 +141,7 @@ h2 {
   text-align: center;
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 
 /* ↓ pseudoelement odpowiedzialny za wyświetalnie kropek przed i po nagłówku z numerem tygodnia ↓ */

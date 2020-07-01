@@ -3729,8 +3729,141 @@ color:blue;
       <section>
         <h2 id="week9">Tydzień 9</h2>
 
-        <article class="article1">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+        <article class="lesson">
+          <h3>CSS: Prefixy</h3>
+
+          <ul>
+            <li>np. -moz- -ms- -webkit-</li>
+
+            <li>
+              są to eksperymentalne featury każdej z przeglądarek, które mogą
+              sprawiać, że ta sama własność działa inaczej na różnych
+              przeglądarkach
+            </li>
+            <li>
+              W przypadku FlexBoxa, aby działał on na wszystkich przeglądarkach
+              należy umieścić reguły
+
+              <ul>
+                <li>display:-webkit-box;</li>
+                <li>display:-webkit-flex;</li>
+                <li>display:-moz-box;</li>
+                <li>display:-ms-flexbox;</li>
+                <li>display:flex;</li>
+              </ul>
+            </li>
+            <li>
+              Nasz webpack posiada wbudowany autoprefixer, który automatycznie
+              załącza wszystkie reguły, które zapewniają kompatybilność
+            </li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>Google fonts</h3>
+
+          <ul>
+            <li>Krój, wygląd naszych literek</li>
+
+            <li>
+              Najpopularniejsze są fonty od Google, które będziemy importować
+            </li>
+
+            <li>
+              Należy pamiętać o wybraniu Language - Latin Extended, co zawęzi
+              wybór do języków posiadających polskie znaki diakretyczne
+            </li>
+            <li>
+              Aby dodatkowo się upewnić, należy wpisać frazę -
+              <strong>zażółć gęślą jaźń </strong>
+            </li>
+            <li>
+              zaimportowanie fontów (w adresie można podejrzeć font-weight)
+              @import
+              url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,400;1,600&display=swap');
+            </li>
+            <li>
+              zastosowanie na stronie - font-family: 'Open Sans', sans-serif;
+            </li>
+            <li>font-weight - ustawienie grubości fonta</li>
+            <li>
+              należy pamiętać, że zaimportowanie zbyt wielu fontów może wpłynąć
+              negatywnie na pierwsze uruchomienie strony - dobrą praktyką jest
+              stosowanie 2 - do zwykłego tekstu i ozdobnego
+            </li>
+            <li>
+              dołączenie plików z fontami jest mało popularna - @font-face
+            </li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>GIT: Branche</h3>
+
+          <ul>
+            <li>
+              Branch (gałąź)
+
+              <ul>
+                <li>pozwalają na bezkarne testowanie</li>
+                <li>służą do bardziej efektywnego rozwijania oprogramowania</li>
+                <li>pozwalają zrównoleglić pracę</li>
+                <li>zwiększają czytelność postępu prac nad projektem</li>
+                <li>ułatwiają wypuszczanie rzeczy na świat</li>
+              </ul>
+            </li>
+
+            <li>git branch <i>nazwabrancha</i></li>
+            <li>git checkout <i>nazwabrancha</i></li>
+            <li>git push --set-upstream origin <i>nazwabrancha</i></li>
+            <li>git merge <i>nazwabrancha</i></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
 
           <ul>
             <li></li>
