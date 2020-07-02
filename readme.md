@@ -1,4 +1,4 @@
-![cover](https://3.bp.blogspot.com/-ZLHoLubWE2I/WuwqgNYhvHI/AAAAAAAAC6Q/bAasgxOehL0SPQX_SqRswI_gtV6ZOQjQgCLcBGAs/s1600/16594.jpg)
+![cover](https://ibb.co/jzphstB)
 
 # WTF Webpack Starter Kit 
 
