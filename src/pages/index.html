@@ -3852,7 +3852,8 @@ color:blue;
                 <li>Czytelne zarówno w formie źródła,jak i wyniku</li>
                 <li>
                   Bezpieczne wprowadzanie treści bez konieczności korzystania z
-                  HTML - brak znaczników HTML
+                  HTML - brak znaczników HTML powoduje, że nie musimy martwić
+                  się o błędy składniowe
                 </li>
                 <li>Nie trzeba pisać edytora 😎</li>
               </ul>
@@ -3863,7 +3864,7 @@ color:blue;
             <li>
               <ol>
                 <li># Nagłówek (H1)</li>
-                <li>>## Nagłówek II (H2)</li>
+                <li>## Nagłówek II (H2)</li>
                 <li>### Nagłówek III (H3)</li>
               </ol>
             </li>
@@ -3875,19 +3876,40 @@ color:blue;
             <li>
               definiowanie obrazka - ![Alt obrazka](https://url.do/obrazka.jpg)
             </li>
-            <li>Kwadratowe [] przed okrągłymi ()</li>
-            <li>K przed O (alfabetycznie)</li>
+            <li>
+              Najpier kwadratowe nawiasy - [], a w nich okrągłe nawiasy - ()
+            </li>
+
             <li>
               definiowanie kodu/polecenia - `polecenie / jednolinijkowy kod`
             </li>
             <li>definiowanie bloku kodu - ```javascript blok kodu ```</li>
-            <li>*test* **test** ***test***</li>
+            <li>pogrubienie - *test*</li>
+            <li>kursywa - **test**</li>
+            <li>pogrubienie i kursywa - ***test***</li>
             <li>definiowanie cytatu - > cytat</li>
-            <li>
-              - element listy 1 - element listy 2 - element listy 3
-            </li>
-            <li>1. element listy 2. element listy 1. element sublisty</li>
+
+            <li>lista nienumerowana (zagnieżdżona)</li>
+            <pre>
+            - element listy 1
+            - element listy 2
+              - element listy 3                    
+            </pre>
+
+            <li>lista numerowana (zagnieżdżona)</li>
+            <pre>
+            1. element listy
+            2. element listy
+              1. element sublisty
+              </pre
+            >
+
             <li>Zróbmy ładny README.md</li>
+            <li>
+              Aby dodać obrazek, który ma się wyświetlać w naszym README.md
+              należy wykonać komende git pull
+            </li>
+            <li></li>
           </ul>
         </article>
 
