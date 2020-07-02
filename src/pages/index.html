@@ -3918,9 +3918,68 @@ color:blue;
           <h3>JS: tablice</h3>
 
           <ul>
-            <li></li>
+            <li>Tablica (array) jest strukturą danych</li>
 
-            <li></li>
+            <li>Tablica (array) != Tabela (table)</li>
+            <li>Przykłady tablic:</li>
+
+            <pre>
+            
+            const hardware = ['keyboard', 'mouse', 'screen']
+
+            const news = [
+            { title: 'wtf',
+            content: 'lorem ipsum…'
+            },
+            { title: 'co ten frontend',
+            content: 'lorem ipsum…',
+            link: 'https://cotenfrontend.pl'
+            }
+            ]          
+            
+            </pre>
+
+            <li>
+              tablica może przechowywać wiele typów danych a ich wartości nie
+              muszą być unikalne
+            </li>
+            <li>tablica jest obiektem - console.log(typeof tablica[])</li>
+            <li>[element0, element1, element2]</li>
+            <li>index - np. [0]</li>
+            <li>pobranie elementu na danym miejscu - tablica[index]</li>
+            <li>
+              gdy będziemy próbować pobrania elementu z miejsca wykraczającego
+              poza naszą tablicę, zostanie zwrócona wartość <i>undefined</i>
+            </li>
+            <li>sprawdzenie ilości elementów - tablica.length</li>
+            <li>
+              zostanie zwrócona liczba elementów a nie indexów - numeracja, a
+              nie od 0 zaczyna się od 1
+            </li>
+            <li>dodanie elementu na końcu - tablica.push(element)</li>
+            <li>dodanie elementu na początku - tablica.unshift(element)</li>
+            <li>usunięcie elementu z końca - tablica.pop()</li>
+            <li>usunięcie elementu z początku - tablica.shift()</li>
+
+            <li>
+              sprawdzenie czy dany element znajduje się w tablicy -
+              tablica.indexOf(element)
+            </li>
+            <li>
+              w przypadku duplikatów zwraca numer indeksu pierwszego napotkanego
+              elementu
+            </li>
+            <li>
+              usunięcie n elementów od danej pozycji -
+              tablica.splice(index,liczbaElementów)
+            </li>
+            <li>
+              pobranie n elementów od danej pozycji - tablica.slice(index,stop)
+            </li>
+            <li>
+              element znajdujący się pod indexem zdefiniowana jako
+              <i>stop</i> nie jest brany pod uwagę przy pobieraniu
+            </li>
           </ul>
         </article>
 
