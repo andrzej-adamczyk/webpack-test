@@ -3915,7 +3915,7 @@ color:blue;
         </article>
 
         <article class="lesson">
-          <h3>JS: tablice</h3>
+          <h3>JS: tablice (Arrays)</h3>
 
           <ul>
             <li>Tablica (array) jest strukturą danych</li>
@@ -3980,16 +3980,118 @@ color:blue;
               element znajdujący się pod indexem zdefiniowana jako
               <i>stop</i> nie jest brany pod uwagę przy pobieraniu
             </li>
+            <li>
+              <a href="https://codepen.io/andrzej23/pen/vYLpOKV?editors=0002"
+                >Przykłady</a
+              >
+            </li>
           </ul>
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>JS: Pętle</h3>
 
           <ul>
-            <li></li>
+            <li>
+              Pętla for
 
-            <li></li>
+              <ul>
+                <pre>
+
+  for (inicjalizacja; warunek stopu; wyrażenie inkrementacji) {
+  kod
+  }
+
+</pre
+                >
+                <li>licznik pętli - i</li>
+
+                <pre>
+            
+          for (let i = 0; i &lt; 3; i++) {
+          console.log(`${i} wykonanie pętli`);
+          }
+            
+            </pre
+                >
+
+                <li>postinkrementacja - i++</li>
+                <li>postdekrementacja - i--</li>
+                <li>++i - preinkrementacja</li>
+                <li>--i - predekrementacja</li>
+                <li>wypisanie elementów tablicy</li>
+              </ul>
+              <pre>
+            
+            const elements = ['😎', '🤯', '😱'];
+            for (let i = 0; i < elements.length; i++) {
+            console.log(`na miejscu ${i} jest ${elements[i]}`);
+            }
+            
+            
+            </pre
+              >
+            </li>
+            <li>
+              pętla while
+            </li>
+            <pre>
+
+    while (warunek logiczny) {
+    kod
+    }
+
+            </pre>
+
+            <pre>
+            let n = 3;
+            while (n &lt; 9) {
+            console.log(n);
+            n = n + 3;
+            }
+            console.log(n);
+            </pre>
+
+            <li>pętla do while (kod w sekcji do{} zawsze się wykonuje)</li>
+            <pre>
+            
+    do {
+    kod
+    } while (warunek logiczny)
+            
+            </pre>
+            <pre>
+            let n = 9;
+            do {
+            console.log(n);
+            n = n + 3;
+            } while (n &lt; 9);
+            console.log(n);
+
+
+            </pre>
+            <li>pętla for in</li>
+            <pre>for (wlasnosc in obiekt)</pre>
+            <pre>
+            const person = {
+            name: 'maciek',
+            age: 31
+            }
+            for (let propertyName in person) {
+            console.log(`${propertyName}: ${person[propertyName]}`);
+            }
+            
+            </pre>
+            <li>pętla for of</li>
+            <pre>for (element of tablica)</pre>
+            <pre>
+            const elements = ['😎', '🤯', '😱'];
+            for (let element of elements) {
+            console.log(element);
+            }
+            
+            
+            </pre>
           </ul>
         </article>
 
