@@ -1,3 +1,5 @@
+![cover](gitHub/cover.png)
+
 
 # Page displaying my learning process
 
