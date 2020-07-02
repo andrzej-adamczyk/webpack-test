@@ -1,6 +1,6 @@
 ![cover](https://res.cloudinary.com/dykmd9zyo/image/upload/v1593656059/big_photo-removebg-preview_ziqt9m.png)
 
-# Homepage of my learning process 
+# Page displaying my learning process 
 
 My WTF diary which presents 13 weeks of:
 
