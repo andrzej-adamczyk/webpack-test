@@ -3993,17 +3993,22 @@ color:blue;
 
           <ul>
             <li>
+              Pętla jest instrukcją, która wskazuje ile razy albo do którego
+              momentu jakaś czynność ma się wykonywać
+            </li>
+
+            <li>
               Pętla for
 
               <ul>
                 <pre>
 
-  for (inicjalizacja; warunek stopu; wyrażenie inkrementacji) {
-  kod
+  for (inicjalizacja; <strong>warunek stopu</strong>; <i>wyrażenie inkrementacji</i>) 
+  {
+    kod
   }
 
-</pre
-                >
+</pre>
                 <li>licznik pętli - i</li>
 
                 <pre>
@@ -4024,7 +4029,7 @@ color:blue;
               <pre>
             
             const elements = ['😎', '🤯', '😱'];
-            for (let i = 0; i < elements.length; i++) {
+            for (let i = 0; i &lt; elements.length; i++) {
             console.log(`na miejscu ${i} jest ${elements[i]}`);
             }
             
@@ -4093,15 +4098,49 @@ color:blue;
             
             </pre>
           </ul>
+
+          <a href="https://codepen.io/andrzej23/pen/WNrdore?editors=1111"
+            >Przykłady</a
+          >
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>JS: Przechowywanie danych 3:24</h3>
 
           <ul>
             <li></li>
 
-            <li></li>
+            <li>
+              Cookies stosujemy żeby trakować, kiedy użytkownik ostatni raz nas
+              odwiedził - w tym momencie mało popularny mechanizm
+            </li>
+            <li>document.cookie</li>
+            <li>document.cookie = "nazwa = wartość"</li>
+            <li>ciastka można podejrzeć w Dev Tools/Application/Cookies</li>
+            <li>
+              ciastka zostają w przeglądarce nawet po usunięciu ich z kodu i
+              znajdują się aż do zamknięcia przeglądarki
+            </li>
+            <li>
+              Local / session storage - współczesne sposoby na przechowywanie
+              danych
+            </li>
+            <li>
+              localstorage - żyje do ręcznego wyczyszczenia (trwalsze), częsciej
+              stosowane
+            </li>
+            <li>
+              sessionstorage - żyje do zamknięcia sesji (zakładki przeglądarki),
+              stosowane np. w bankowości
+            </li>
+            <li>localStorage.setItem('nazwa', wartosc)</li>
+            <li>localStorage.getItem('nazwa')</li>
+            <li>localStorage.removeItem('nazwa')</li>
+            <li>JSON.stringify(obiekt)</li>
+            <li>obiekt -> JSON string</li>
+            <li>JSON.parse(JSONString)</li>
+            <li>JSON string -> obiekt</li>
+            <li>devtools -> Application</li>
           </ul>
         </article>
 
@@ -4128,7 +4167,10 @@ color:blue;
               </ul>
             </li>
 
-            <li></li>
+            <li>
+              Odkrycie, że wewnątrz tagu &lt;pre&gt; można używać znaczników
+              HTML
+            </li>
 
             <li></li>
           </ul>

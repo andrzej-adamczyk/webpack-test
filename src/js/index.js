@@ -26,3 +26,5 @@ document.getElementById("moment").innerHTML = stringFromNow;
 /* place your code below */
 
 console.log("HELLO 🚀");
+
+document.cookie = name = "andrzej";
