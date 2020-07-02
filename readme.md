@@ -1,4 +1,4 @@
-![cover](https://ibb.co/jzphstB)
+![cover](https://imgbb.com/"><img src="https://i.ibb.co/HCJ73Z1/big-photo-removebg-preview.png" alt="big-photo-removebg-preview" border="0)
 
 # WTF Webpack Starter Kit 
 
