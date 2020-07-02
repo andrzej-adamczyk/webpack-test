@@ -1,4 +1,4 @@
-![cover](https://i.ibb.co/HCJ73Z1/big-photo-removebg-preview.png)
+![cover](https://res.cloudinary.com/dykmd9zyo/image/upload/v1593656059/big_photo-removebg-preview_ziqt9m.png)
 
 # WTF Webpack Starter Kit 
 
