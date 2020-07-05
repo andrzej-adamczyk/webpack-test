@@ -4108,47 +4108,106 @@ color:blue;
           <h3>JS: Przechowywanie danych 3:24</h3>
 
           <ul>
-            <li></li>
+            <li>
+              Problematyka zachowania danych z przeglądarki, aby nie zniknęły w
+              momencie odświeżenia strony
+            </li>
 
             <li>
-              Cookies stosujemy żeby trakować, kiedy użytkownik ostatni raz nas
-              odwiedził - w tym momencie mało popularny mechanizm
+              Cookies stosujemy np.żeby trakować, kiedy użytkownik ostatni raz
+              nas odwiedził - w tym momencie mało popularny mechanizm
             </li>
-            <li>document.cookie</li>
-            <li>document.cookie = "nazwa = wartość"</li>
-            <li>ciastka można podejrzeć w Dev Tools/Application/Cookies</li>
+
+            <li>
+              stworzenie pliku cookie - document.cookie = "nazwa = wartość"
+            </li>
+            <li>podejrzenie pliku cookie - console.log(document.cookie)</li>
+            <li>
+              ciastka można także podejrzeć w Dev Tools/Application/Cookies
+            </li>
             <li>
               ciastka zostają w przeglądarce nawet po usunięciu ich z kodu i
               znajdują się aż do zamknięcia przeglądarki
             </li>
             <li>
-              Local / session storage - współczesne sposoby na przechowywanie
+              local / session storage - współczesne sposoby na przechowywanie
               danych
+
+              <ul>
+            
+            <li> local storage
+             
+
+
+<ul>
+
+
+<li>dane istnieją aż do ręcznego wyczyszczenia (są trwalsze)</li>
+<li>najczęściej spotykane podejście</li>
+<li>mamy do niej dostęp, nie musimy jej inicjalizować</li>
+<li>można je podejrzeć w Dev Tools/Application/Local Storage</li>
+ <li>stworzenie local storage localStorage.setItem('nazwa - string', 'wartosc - string')</li>
+            <li>pobranie wartości klucza - localStorage.getItem('nazwa')</li>
+                        <li>usunięcie wartości klucza - localStorage.removeItem('nazwa')</li>
+
+
+</ul>
+
+
+
+
             </li>
             <li>
-              localstorage - żyje do ręcznego wyczyszczenia (trwalsze), częsciej
-              stosowane
+              sessionstorage
+              <ul>
+                <li>żyje do zamknięcia sesji (zakładki przeglądarki)</li>
+                <li>stosowane w przypadku danych wrażliwych np. w bankowości</li>
+                <li>można je podejrzeć w Dev Tools/Application/Session Storage</li>
+                
+              </ul>
+              
+              
+              
+              
+              
+               
+            
             </li>
-            <li>
-              sessionstorage - żyje do zamknięcia sesji (zakładki przeglądarki),
-              stosowane np. w bankowości
-            </li>
-            <li>localStorage.setItem('nazwa', wartosc)</li>
-            <li>localStorage.getItem('nazwa')</li>
-            <li>localStorage.removeItem('nazwa')</li>
-            <li>JSON.stringify(obiekt)</li>
+
+</li>
+</ul>
+
+           
+<li>JSON - Java Script Object Notation</li>
+            <li>JSON.stringify(obiekt) - (JSON.stringify({ name: "adam" })</li>
             <li>obiekt -> JSON string</li>
             <li>JSON.parse(JSONString)</li>
             <li>JSON string -> obiekt</li>
-            <li>devtools -> Application</li>
+            <li>zazwyczaj session/local storage jest tworzone po kliknięciu w przycisk</li>
+            <input class = "entry--js"> 
+<button class="button--js">Dodaj obiekt w local storage</button>
+
           </ul>
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>Frontendowiec vs projektowanie graficzne</h3>
 
           <ul>
-            <li></li>
+            <li>Zasady bieda projektowania
+            
+            <ol>
+              <li>Zacznij od prawdziwej treści</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            
+            
+            </li>
 
             <li></li>
           </ul>
@@ -4172,7 +4231,8 @@ color:blue;
               HTML
             </li>
 
-            <li></li>
+            <li>Instalacja wtyczki - Assistant - Realtime Linter & Quality Assurance For Your Team
+</li>
           </ul>
         </article>
       </section>
