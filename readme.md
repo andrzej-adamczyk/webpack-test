@@ -7,6 +7,7 @@ My WTF diary which presents 13 weeks of:
 
 1. Things I learned
 2. My achievements
+3. Homeworks
 
 ## How to use it?
 
